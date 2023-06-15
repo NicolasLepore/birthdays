@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    --blue-bg: #0099FF;
+    --submit-btn: #00CC99;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    gap: 2.5rem;
+}
+
+header {
+    background-color: var(--blue-bg);
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+section {
+    margin: 0 4rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 2rem 0;
+    gap: .5rem;
+}
+
+fieldset input {
+    background-color: #dbdbdb;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 750px;
+}
+
+fieldset span {
+    font-size: 14px;
+    color: red;
+}
+
+.submit {
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: var(--submit-btn);
+    padding: 1rem 4rem;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.submit:hover {
+    transform: scale(0.95);
+}
+
+section:nth-child(2) {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    font-size: 18px;
+}
+
+thead {
+    color: black;
+    font-weight: 500;
+}
+
+td {
+    border: 2px solid #a7a7a7;
+    padding: .4rem .8rem;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.btn-edit {
+    color: rgb(255, 145, 0);
+    transition: all 0.6s;
+    border-radius: 8px;
+}
+
+.btn-delete {
+    color: red;
+    transition: all 0.6s;
+    border-radius: 8px;
+}
+
+.btn-edit:hover {
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: red;
+    color: white;
+}
