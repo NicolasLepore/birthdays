@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversários</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Meus Aniversários</h1>
+    </header>
+    <main>
+        <section>
+            <form id="form">
+                <fieldset>
+                    <label for="input-name">Nome da Pessoa (Campo Obrigatório)</label> 
+                    <input required type="text" id="input-name" placeholder="Digite o nome da pessoa aqui" minlength="2" maxlength="120">
+                    <span data-span></span>
+                </fieldset>
+                <fieldset>
+                    <label for="input-date">Data de Nascimeno (Campo Obrigatório)</label>
+                    <input required type="date" id="input-date" placeholder="Digite a data de nascimento da pessoa aqui">
+                    <span data-span></span>
+                </fieldset>
+                <input type="submit" value="Salvar" id="submit" class="submit">
+            </form>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Data de Nascimento</td>
+                        <td>Ações</td>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <!--
+                    <tr>
+                        <td>Nicolas Lepore</td>
+                        <td>26/09/2006</td>
+                        <td class="btn-div">
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-delete">Deletar</button>
+                        </td>
+                    </tr>
+                    !-->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
